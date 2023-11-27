@@ -27,7 +27,7 @@ pipeline {
         }
         stage("updating the image of the deployed cluster") {
             steps {
-                sh 'kubectl set image deployment/k8deploy container-0=645docker/645-hw2:${BUILD_TIMESTAMP} -n default'
+                sh 'kubectl set image deployment/backend container-0=645docker/645-hw3:${BUILD_TIMESTAMP} -n default'
             }
         }
     }
