@@ -31,7 +31,7 @@ public class SurveyController {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello World!";
+        return "Hello World - Jenkins Trigger!";
     }
 
     @GetMapping
